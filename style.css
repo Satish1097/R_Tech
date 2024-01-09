@@ -1,0 +1,1948 @@
+body{
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    height: 5.5vh;
+    width: 100%;
+    background-color: #eaeced;
+}
+
+
+.nav .box1 {
+    width: 55%;
+    height: 100%;
+    background-color: #2F2C2C;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+}
+
+.nav .box1 span {
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-top: 8px;
+}
+
+.nav .box2 {
+    width: 45%;
+    height: 100%;
+    background-color: #eaeced;
+
+}
+
+.nav .box2 .inerbox {
+    display: flex;
+    justify-content: space-evenly;
+    width: 45%;
+    color: #2F2C2C;
+    margin: 5px 0 0 26%;
+}
+
+.nav .box2 .inerbox a {
+    color: #2F2C2C;
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+.nav .box2 .inerbox a:hover {
+    color: orangered;
+}
+
+
+
+
+
+.navlower {
+    width: 100%;
+    height: 14vh;
+    background-color: #ffffff;
+    display: flex;
+    z-index: 5;
+}
+
+.navlower .logo {
+    width: 30%;
+    height: 100%;
+}
+
+.navlower .logo img {
+    height: 70%;
+    width: 38%;
+    margin: 3% 0 0 45%;
+}
+
+.navlower .container {
+    width: 60% !important;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navlower ul li {
+    list-style: none;
+    margin-top: 5%;
+    position: relative;
+}
+
+.navlower ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: orangered;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    transition: 0.5s;
+}
+
+.navlower ul li:hover::after {
+    width: 100%;
+}
+
+.navlower ul li a {
+    text-decoration: none;
+    color: #2F2C2C;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.navlower ul li a:hover {
+    color: orangered;
+}
+
+#ab {
+    position: relative;
+    display: inline-block;
+}
+
+#ab .dropdown-content {
+    width: 300px;
+    height: 200px;
+    margin-top: 28%;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+#ab:hover .dropdown-content {
+    display: block;
+}
+
+#ab .dropdown-content a {
+    margin: 20px 0 0 10%;
+    position: absolute;
+}
+
+
+#sr .dropdown-content {
+    width: 300px;
+    height: 500px;
+    margin-top: 30%;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+#sr:hover .dropdown-content {
+    display: block;
+}
+
+#sr .dropdown-content a {
+    margin: 20px 0 0 10%;
+    position: absolute;
+}
+
+
+#pr .dropdown-content {
+    width: 300px;
+    height: 150px;
+    margin-top: 31%;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+#pr:hover .dropdown-content {
+    display: block;
+}
+
+#pr .dropdown-content a {
+    margin: 20px 0 0 10%;
+    position: absolute;
+}
+
+
+#ft .dropdown-content {
+    width: 1000px;
+    height: 500px;
+    margin-top: 30%;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: -550%;
+}
+
+#ft .dropdown-content .contentbox {
+    width: 250px;
+    height: 500px;
+}
+
+#ft .dropdown-content .contentbox p {
+    font-size: 22px;
+    font-family: sans-serif;
+    margin: 30px 0 0 30px;
+}
+
+#ft .dropdown-content .contentbox a {
+    color: #7c7d7e;
+    margin-left: 30px;
+    font-family: arial;
+}
+
+#ft .dropdown-content .contentbox a:hover {
+    color: orangered;
+}
+
+#ft .dropdown-content .contentbox pre {
+    font-family: arial;
+    margin: 30px 0 0 30px;
+    font-size: 16px;
+    color: #7c7d7e;
+}
+
+#ft:hover .dropdown-content {
+    display: block;
+    display: flex;
+
+}
+
+#ft .dropdown-content a {
+    margin: 20px 0 0 10%;
+    position: absolute;
+}
+
+.container {
+    margin-left: 0% !important;
+}
+
+.col {
+    margin-left: 20px !important;
+}
+
+.navlower button {
+    background-color: orangered;
+    height: 45px;
+    width: 70px;
+    font-size: 30px;
+    display: none;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+}
+
+/*==================================Media query navbar max width(1355px)==================================*/
+
+@media only screen and (max-width: 1355px) {
+    .nav {
+        height: 8vh;
+    }
+
+    .nav .box1 span {
+        margin-top: 10px;
+    }
+
+    .nav .box2 .inerbox a {
+        margin-left: 10px;
+    }
+
+    .nav .box2 .inerbox {
+        margin: 10px 0 0 20%;
+    }
+
+    .navlower {
+        height: 24vh;
+    }
+
+    .navlower .logo img {
+        height: 41%;
+        width: 45%;
+        margin: 15% 0 0 45%;
+    }
+}
+/*=============================*/
+@media only screen and (max-width: 1181px) {
+    .nav .box1{
+        width: 70%;
+    }
+    .nav .box2{
+        width: 30%;
+        position: relative;
+    }
+    .nav .box2 .inerbox{
+        width: 70%;
+        margin-top: 10px;
+    }
+}
+
+/*==================================Media query navbar max width(1000px)==================================*/
+
+@media only screen and (max-width: 1000px) {
+    .nav {
+        height: 8vh;
+    }
+
+    .nav .box1 span {
+        margin-top: 10px;
+    }
+
+    .nav .box2 .inerbox a {
+        margin-left: 10px;
+    }
+
+    .nav .box2 .inerbox {
+        margin: 10px 0 0 20%;
+    }
+
+    .navlower {
+        height: 10vh;
+        justify-content: space-between;
+    }
+
+    .navlower .logo img {
+        height: 70%;
+        width: 70%;
+        margin: 4% 0 0 20%;
+    }
+
+    .navlower #menu {
+        position: absolute;
+        display: block;
+        width: 100% !important;
+        height: 80vh;
+        left: -100%;
+        margin-top: 10vh;
+        background-color: rgb(65, 174, 217);
+    }
+
+    .navlower #menu li a i {
+        margin-left: 600PX;
+        height: 35px;
+        width: 45px;
+        bottom: 30px;
+        position: relative;
+        background-color: #f9f9f9;
+        color: orangered;
+        text-align: center;
+    }
+
+    .navlower button {
+        display: block;
+        margin: 1% 20% 0 0;
+        color: #ffff;
+    }
+
+    .navlower .container {
+        display: none;
+    }
+
+    #ab .dropdown-content,
+    #sr .dropdown-content,
+    #pr .dropdown-content,
+    #ft .dropdown-content {
+        margin-top: 0px;
+    }
+
+    #sr,
+    #ft,
+    #pr {
+        margin-top: -10px !important;
+    }
+
+    .navlower ul li::after {
+        bottom: 20px;
+    }
+
+    .navlower ul li:hover::after {
+        width: 15%;
+    }
+
+    #ab i {
+        margin-top: 0px;
+    }
+
+    #con,
+    #imp {
+        margin-top: -10px;
+    }
+
+    #con {
+        margin-top: 50px !important;
+        margin-left: -100px !important;
+    }
+
+    .navlower ul #con::after {
+        bottom: 0;
+    }
+
+}
+/*==========================================width (880)============*/
+@media only screen and (max-width: 881px) {
+    .nav .box1{
+        width: 75%;
+    }
+    .nav .box2{
+        width: 25%;
+    }
+    .nav .box2 .inerbox{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+}
+
+
+/*============================================max width(801px)====================================*/
+@media only screen and (max-width: 801px) {
+    .nav {
+        height: 15vh;
+        display: block;
+        background-color: #2F2C2C;
+    }
+
+    .nav .box1 {
+        width: 100%;
+        height: 50%;
+        display: block;
+        text-align: center;
+    }
+
+    .nav .box1 span {
+        margin-top: 10px;
+        padding: 20px;
+    }
+
+    .nav .box2 {
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        position: relative;
+        background-color: #2F2C2C;
+    }
+.nav .box2 .inerbox{
+    margin-left: 35%;
+    width: 30%;
+}
+    .nav .box2 .inerbox span {
+        color: white;
+    }
+
+    .nav .box2 .inerbox span a {
+        color: white;
+    }
+
+   
+
+    .navlower {
+        height: 10vh;
+        justify-content: space-between;
+    }
+
+    .navlower .logo img {
+        height: 70%;
+        width: 70%;
+        margin: 4% 0 0 20%;
+    }
+
+    .navlower #menu {
+        position: absolute;
+        display: block;
+        width: 100% !important;
+    }
+
+    .navlower #menu li a i {
+        margin-left: 400PX;
+    }
+
+    .navlower button {
+        display: block;
+        margin: 1% 20% 0 0;
+        color: #ffff;
+    }
+
+    .navlower ul li::after {
+        bottom: 20px;
+    }
+
+    .navlower ul li:hover::after {
+        width: 15%;
+    }
+
+    #ab i {
+        margin-top: 0px;
+    }
+
+    #con,
+    #imp {
+        margin-top: -10px;
+    }
+
+    #con {
+        margin-top: 50px !important;
+        margin-left: -100px !important;
+    }
+
+    .navlower ul #con::after {
+        bottom: 0;
+    }
+
+}
+@media only screen and (max-width: 617px) {
+    .nav .box2 .inerbox{
+        width: 50%;
+        margin-left: 25%;
+    }
+
+}
+
+
+/*============================================max width(576px)====================================*/
+@media only screen and (max-width: 576px) {
+    .navlower #menu {
+        width: 80% !important;
+
+    }
+
+    .navlower #menu li a i {
+        margin-left: 320PX;
+
+    }
+
+    .navlower button {
+        display: block;
+        margin: 1% 20% 0 0;
+        color: #ffff;
+    }
+
+    .navlower .container {
+        display: none;
+    }
+
+    #con {
+        margin-top: 50px !important;
+        margin-left: -370px !important;
+    }
+    .navlower .logo{
+        width: 40%;
+    }
+    .navlower button{
+        margin: 7px 15% 0 0;
+        height: 45px;
+        width: 65px;
+        font-size: 27px;
+    }
+
+}
+/*---------------------------------max Width(400px)---------------------------------------*/
+@media only screen and (max-width: 492px) {
+    .navlower #menu {
+        width: 90% !important;
+
+    }
+    .navlower #menu li a i {
+        margin-left: 300px;
+
+    }
+    .navlower .logo{
+        width: 45%;
+    }
+    .navlower button{
+        margin: 10px 15% 0 0;
+        height: 40px;
+        width: 60px;
+        font-size: 25px;
+    }
+}
+
+/*---------------------------------max Width(400px)---------------------------------------*/
+@media only screen and (max-width: 410px) {
+    .nav .box2 .inerbox {
+        margin-left: 15%;
+        width: 70%;
+        height: 40%;
+    }
+.nav .box1{
+    height: 70%;
+    position: relative;
+}
+    .nav .box1 span{
+        margin-top: 40px;
+        line-height: 2;
+    }
+    .nav .box1 #pn{
+        margin-left: -20px;
+    }
+    .nav .box1 #ad{
+        margin-left: -20px;
+    }
+    .nav .box2 .inerbox{
+        margin-top: 0px;
+    }
+    .nav {
+        height: 18vh;
+    }
+    .navlower #menu {
+        width: 80% !important;
+
+    }
+    .navlower .logo img {
+        height: 70%;
+        width: 90%;
+        margin: 6% 0 0 10%;
+    }
+
+    .navlower #menu li a i {
+        margin-left: 200PX;
+
+    }
+    #con {
+        margin-top: 50px !important;
+        margin-left: -90% !important;
+    }
+  
+}
+/*======================width 370px======================*/
+@media only screen and (max-width: 371px) {
+    .nav .box1{
+        display: block;
+        margin: 0;
+    }
+    .nav .box1 span {
+        line-height:0.5;
+        display: block;
+        margin-top: -11%;
+    }
+    .nav .box1 #ad {
+        margin-top: -30px;
+    }
+    .nav .box1 #pn{
+        margin-top: -10px;
+    }
+    .navlower .logo{
+        width: 50%;
+    }
+    .navlower button{
+        margin: 10px 10% 0 0;
+    }
+}
+
+
+/*=================================home=========================================*/
+/* carousal css */
+
+.case-study {
+    width: 100%;
+    height: 100%;
+    background-color: #f7f9f8;
+    margin: 0px;
+    padding: 35px;
+    box-sizing: border-box;
+}
+
+.case-study-title {
+    text-align: center;
+    color: black;
+    font-size: 38px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    margin-bottom: 2%;
+}
+
+.case-study-title small {
+    color: #b4b4b4;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: block;
+}
+
+.case-study-title span {
+    margin-top: 10px;
+    color: #FA6742;
+}
+
+.case-study-animation {
+    position: relative;
+    content: "";
+    width: 5% !important;
+    height: 3px;
+    background-color: #FA6742;
+    margin-left: 47.5%;
+    margin-right: 47.5%;
+    margin-top: 25%;
+
+}
+
+.case-study-animation1 {
+    position: absolute;
+    content: "";
+    width: 30% !important;
+    height: 3px;
+    background-color: white;
+    left: -80;
+    animation: moveLine 1s linear infinite;
+}
+
+.case-study-animation2 {
+    position: absolute;
+    content: "";
+    width: 40% !important;
+    height: 3px;
+    background-color: white;
+    left: -70;
+    animation: moveLine 1s linear infinite;
+}
+
+@keyframes moveLine {
+    0% {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(50%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+
+}
+
+.case-study-content {
+    margin-top: 8% !important;
+}
+
+.card {
+    width: 100% !important;
+    border: none !important;
+    text-align: center;
+    margin-left: 50% !important;
+}
+
+.card img:hover {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card-body a {
+    text-decoration: none;
+}
+
+.card-body a h3 {
+    color: black;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+.card-body a h3:hover {
+    color: #f02e0c;
+}
+
+.view {
+    text-align: center;
+    margin-top: 5% !important;
+}
+
+.view a {
+    text-decoration: none;
+}
+
+.view a h1 {
+    font-size: 15px !important;
+    background-color: #FA6742;
+    width: 10%;
+    margin: 0% 45% 0% 45%;
+    color: white;
+    border-radius: 20px;
+    padding: 12px;
+}
+
+.view a h1:hover {
+    background-color: black;
+}
+
+
+/*=================== carousal box======================= */
+.carousal-main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #6F42C1, rgb(253, 251, 251));
+}
+
+.carousal-image-box {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    margin: 0% 5% 0% 5%;
+    background: url(/images/pattern_arrow2.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: top 10% right 57%;
+}
+
+.carousal-image-box2 {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    margin: 0% 10% 0% 10%;
+    background-color: transparent;
+    background: url(/images/pattern_arrow1.png);
+    background-repeat: no-repeat;
+    background-position: bottom 10% right 50%;
+}
+
+.carousal-image-box3 {
+    position: absolute;
+    display: flex;
+    width: 80%;
+    height: 80%;
+    margin: 10% 10% 0% 10%;
+    background: url(/images/pattern_arrow3.png);
+    background-repeat: no-repeat;
+    background-position: bottom 10% right 50%;
+}
+
+.carousal-image-box3 .craousal-content1 {
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.carousal-image-box3 .craousal-content1 .image {
+    width: 90%;
+    height: 60%;
+}
+
+.carousal-image-box3 .craousal-content1 .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousal-image-box3 .craousal-content2 {
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.carousal-image-box3 .craousal-content2 .text {
+    width: 100%;
+    height: 100%;
+}
+
+.craousal-content2 .text h2 {
+    color: black;
+    font-size: 35px;
+    font-family: cursive;
+    font-weight: 800;
+    margin-bottom: 5%;
+}
+
+.craousal-content2 .text h2 span {
+    color: white;
+}
+
+.craousal-content2 .text p {
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: 800;
+    color: white;
+}
+
+.craousal-content2 .text a {
+    text-decoration: none;
+}
+
+.craousal-content2 .text a button {
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.craousal-content2 .text a button:hover {
+    background-color: rgb(207, 7, 77);
+    color: white;
+}
+
+/* carousal section 2 ============= */
+.carousal-main-second {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #FA6742;
+}
+
+.carousal-image-box2-3 {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 80%;
+    margin: 10% 0% 0% 0%;
+    background: url(/images/pattern_arrow3.png);
+    background-repeat: no-repeat;
+    background-position: bottom 10% right 50%;
+}
+
+.carousal-image-box2-3 .craousal-content1 {
+    width: 40%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.carousal-image-box2-3 .craousal-content1 .image1 {
+    width: 100%;
+    height: 80%;
+}
+
+.carousal-image-box2-3 .craousal-content1 .image1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousal-image-box2-3 .craousal-content2 {
+    width: 40%;
+    height: 50%;
+    background-color: transparent;
+    margin-left: 20%;
+}
+
+.carousal-image-box2-3 .craousal-content2 .text {
+    width: 100%;
+    height: 100%;
+}
+
+/* carousal section 3 ============= */
+.carousal-main-third {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #20C997;
+}
+
+.carousal-image-box3-3 {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 80%;
+    margin: 10% 0% 0% 0%;
+    background: url(/images/pattern_arrow3.png);
+    background-repeat: no-repeat;
+    background-position: bottom 10% right 50%;
+}
+
+.carousal-image-box3-3 .craousal-content1 {
+    width: 40%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.carousal-image-box3-3 .craousal-content1 .image1 {
+    width: 80%;
+    height: 60%;
+}
+
+.carousal-image-box3-3 .craousal-content1 .image1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousal-image-box3-3 .craousal-content2 {
+    width: 40%;
+    height: 50%;
+    background-color: transparent;
+    margin-right: 20%;
+}
+
+.carousal-image-box3-3 .craousal-content2 .text {
+    width: 100%;
+    height: 100%;
+}
+
+/*==============media css===================*/
+@media(max-width:800px) {
+    .card {
+            margin-left:0px !important;
+        }
+                .view a h1 {
+                    font-size: 15px !important;
+                    background-color: #FA6742;
+                    width: 30%;
+                    margin: 0% 35% 0% 35%;
+                    color: white;
+                    border-radius: 20px;
+                    padding: 12px;
+                }
+    .carousal-image-box {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0% 0% 0% 0%;
+        background: none;
+
+    }
+
+    .carousal-image-box2 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0% 0% 0% 0%;
+        background-color: transparent;
+        background: none;
+
+    }
+
+    .carousal-image-box3 {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0% 0% 0% 0%;
+        background: none;
+    }
+
+    .carousal-image-box3 .craousal-content1 {
+        width: 100%;
+        height: 40%;
+        background-color: transparent;
+        margin: 10% 0% 0% 0%;
+    }
+
+    .carousal-image-box3 .craousal-content1 .image {
+        width: 80%;
+        height: 100%;
+        margin-left: 10%;
+    }
+
+    .carousal-image-box3 .craousal-content1 .image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .carousal-image-box3 .craousal-content2 {
+        width: 100%;
+        height: 40%;
+        background-color: transparent;
+        margin: 10% 0% 0% 0%;
+    }
+
+    .carousal-image-box3 .craousal-content2 .text {
+        width: 80%;
+        height: 100%;
+        margin-left: 10%;
+        text-align: center;
+    }
+
+    .craousal-content2 .text h2 {
+        color: black;
+        font-size: 30px;
+        font-family: cursive;
+        font-weight: 800;
+        margin-bottom: 5%;
+    }
+
+    .craousal-content2 .text h2 span {
+        color: white;
+    }
+
+    .craousal-content2 .text p {
+        font-size: 18px;
+        font-family: cursive;
+        font-weight: 800;
+        color: white;
+    }
+
+    .craousal-content2 .text a {
+        text-decoration: none;
+    }
+
+    .craousal-content2 .text a button {
+        font-size: 15px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        padding: 8px;
+    }
+
+    .craousal-content2 .text a button:hover {
+        background-color: rgb(207, 7, 77);
+        color: white;
+    }
+
+    /* carousal section 2 ============= */
+    .carousal-image-box2-3 {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0% 0% 0% 0%;
+        background-color: transparent;
+        background: none;
+    }
+
+    .carousal-image-box2-3 .craousal-content1 {
+        width: 100%;
+        height: 40%;
+        background-color: transparent;
+        margin: 10% 0% 0% 0%;
+    }
+
+    .carousal-image-box2-3 .craousal-content1 .image1 {
+        width: 80%;
+        height: 100%;
+        margin-left: 10%;
+        ;
+    }
+
+    .carousal-image-box2-3 .craousal-content1 .image1 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .carousal-image-box2-3 .craousal-content2 {
+        width: 100%;
+        height: 40%;
+        background-color: transparent;
+        margin: 10% 0% 0% 0%;
+    }
+
+    .carousal-image-box2-3 .craousal-content2 .text {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    /* carousal section 3 ============= */
+    .carousal-image-box3-3 {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0% 0% 0% 0%;
+        background-color: transparent;
+        background: none;
+    }
+
+    .carousal-image-box3-3 .craousal-content1 {
+        width: 100%;
+        height: 40%;
+        background-color: transparent;
+        margin: 10% 0% 0% 0%;
+    }
+
+    .carousal-image-box3-3 .craousal-content1 .image1 {
+        width: 80%;
+        height: 80%;
+        margin-left: 10%;
+        margin-bottom: 20%;
+
+    }
+
+    .carousal-image-box3-3 .craousal-content1 .image1 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .carousal-image-box3-3 .craousal-content2 {
+        width: 100%;
+        height: 40%;
+        background-color: transparent;
+        margin: 10% 0% 0% 0%;
+    }
+
+    .carousal-image-box3-3 .craousal-content2 .text {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+}
+/*serach and clients */
+.inner {
+    width: 100%;
+    height: 40vh;
+    background: url(images/back1.png);
+    margin: 0px auto;
+
+}
+
+.c1 {
+    width: 50%;
+    height: 50%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.c1 h1 {
+    color: black;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+
+.c1 span {
+    color: white;
+}
+
+.inner input {
+    margin: 0px;
+    margin-top: 10%;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 20px;
+
+}
+
+.inner button {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+
+}
+
+/*------------------second page: -------------- */
+
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.main .inner1 {
+    height: 100%;
+    width: 50%;
+    background-color: white;
+}
+
+.main .inner1 img {
+    height: 60%;
+    width: 60%;
+    background-position: center;
+    background-size: cover;
+    margin: 15%;
+}
+
+.main .inner2 {
+    height: 100%;
+    width: 50%;
+    background-color: white;
+}
+
+.main .inner2 h1 {
+    margin: 10% 10% 0 10%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+.main .inner2 p {
+    margin: 10% 10% 0 10%;
+    font-size: 20px;
+    line-height: 2;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+.inner2 button {
+    border: none;
+    padding: 15px;
+    width: 20%;
+    border-radius: 25px;
+    margin: 10% 0 0 10%;
+    background-color: #f78e16;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+
+}
+.inner2 button:hover{
+    background-color: #2F2C2C;
+}
+
+.inner2 button a {
+    text-decoration: none;
+    color: white;
+    font-size: bold;
+
+}
+
+.inner2 #orange {
+    background-color: #f02e0c;
+}
+
+
+/*-----------------Third page------------------------*/
+.main2 {
+    width: 100%;
+    height: 40vh;
+    background-color: whitesmoke;
+
+
+}
+
+.inner3 {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+}
+
+.inner4 {
+    text-align: center;
+}
+
+.inner4 h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    margin-bottom: 15%;
+    margin-top: 15%;
+}
+
+.counter1 {
+    display: inline-block;
+    font-size: 24px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    animation: increment 5s linear infinite;
+}
+.counter2 {
+    display: inline-block;
+    font-size: 24px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    animation: increment 5s linear infinite;
+}
+.counter3 {
+    display: inline-block;
+    font-size: 24px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    animation: increment 5s linear infinite;
+}
+.counter4 {
+    display: inline-block;
+    font-size: 24px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    animation: increment 5s linear infinite;
+}
+.counter5 {
+    display: inline-block;
+    font-size: 24px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    animation: increment 5s linear infinite;
+}
+@keyframes increment {
+    from {
+        content: "0";
+    }
+
+    to {
+        content: "100";
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+    
+
+}
+
+@media screen and (max-width: 769px) {
+
+
+
+    /* search and active clients */
+        .inner {
+            width: 100%;
+            height: 50vh;
+            background: url(images/back1.png);
+            margin: 0px auto;
+        }
+    
+        .c1 {
+            width: 100%;
+            height: 100%;
+        }
+    
+        .inner input {
+            padding: 10px;
+        }
+    
+        .inner button {
+            margin-top: 10%;
+    
+        }
+    
+        /*------------------second page: -------------- */
+    
+        .main {
+            height: 135vh;
+            width: 100%;
+            display: block;
+    
+        }
+    
+        .main .inner1 {
+            height: 50%;
+            width: 100%;
+            background-color: white;
+        }
+    
+        .main .inner1 img {
+            height: 70%;
+            width: 70%;
+    
+        }
+    
+        .main .inner2 {
+            height: 50%;
+            width: 100%;
+            text-align: center;
+        }
+    
+        .main .inner2 h1 {
+            margin: 0px;
+        }
+    
+        .main .inner2 p {
+            margin-top: 5%;
+            font-size: 20px;
+            line-height: 1.2;
+        }
+    
+        .inner2 button {
+            padding: 7px;
+            width: 25%;
+            margin-right: 5%;
+        }
+
+        .case-study{
+            width: 100%;
+            height: 120vh;
+        }
+        .case-study .content{
+            width: 100%;
+        }
+    
+        /*-----------------Third page------------------------*/
+        .main2 {
+            width: 100%;
+            height: 255vh;
+            background-color: whitesmoke;
+        }
+    
+        .inner3 {
+            width: 80%;
+            height: 100%;
+            display: block;
+            justify-content: space-around;
+            margin-left: 10%;
+            margin-right: 10%;
+            align-items: center;
+        }
+}
+@media screen and (max-width: 426px) {
+    .main{
+        height: 140vh;
+    }
+    .main .inner1{
+        height: 45%;
+    }
+    .main .inner2{
+        height: 55%;
+    }
+    .main button{
+        padding: 0px;
+        width: 32%;
+        margin-right: 5%;
+        margin-top: 15%;
+        height: 40px;
+    }
+    .main2 {
+        height: 160vh;
+    }
+    .case-study{
+        height: 250vh;
+    }
+
+}
+
+@media screen and (max-width: 391px) {
+    .main{
+        height: 140vh;
+    }
+    .main .inner1{
+        height: 45%;
+    }
+    .main .inner2{
+        height: 55%;
+    }
+    .main button{
+        padding: 0px;
+        width: 32%;
+        margin-right: 5%;
+        margin-top: 15%;
+        height: 35px;
+    }
+    .main2 {
+        height: 160vh;
+    }
+    .case-study{
+        height: 230vh;
+    }
+}
+@media screen and (max-width: 360px) {
+    .main button{
+        font-size: 12px;
+    }
+    .case-study{
+        height: 225vh;
+    }
+    .view a h1{
+        width: 40%;
+        margin-left: 30%;
+    }
+
+}
+
+
+/*========================Footer==============================*/
+.footer {
+    height: 75vh;
+    width: 100%;
+    background-color: #2F2C2C;
+    display: flex;
+}
+.footer .footerele1{
+    height: 100%;
+    width: 40%;
+}
+.footer .footerele1 .leftele1{
+    width: 100%;
+    height: 60%;
+    position: relative;
+}
+.footer .footerele1 .leftele2{
+    width: 100%;
+    height: 40%;
+}
+.footer .footerele1 .leftele2 img{
+    width: 25%;
+    height: 60%;
+    margin-left: 37%;
+    background-position: center;
+    background-size: cover;
+}
+.footer .footerele1 .leftele1 .mediacard{
+    height: 60%;
+    width: 70%;
+    margin: 0 0 15% 15%;
+    margin-top: -50px;
+    position: absolute;
+    background-color: #2F2C2C;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.footer .footerele1 .leftele1 .mediacard .cardlogo{
+    width: 100%;
+    height: 40%;
+}
+.footer .footerele1 .leftele1 .mediacard .cardlogo img{
+    height: 90%;
+    width: 80%;
+    margin-left: 10%;
+}
+.footer .footerele1 .leftele1 .mediacard .media{
+    width: 100%;
+    height: 60%;
+}
+.footer .footerele1 .leftele1 .mediacard .media #mediabutton{
+    color: white;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin:25px 0 0 14px;
+    border: 0;
+    outline: 0;
+}
+.footer .footerele1 .leftele1 .mediacard .media .f{
+    background-color: blue;
+}
+.footer .footerele1 .leftele1 .mediacard .media .t{
+    background-color: #1DA1F2;
+}
+.footer .footerele1 .leftele1 .mediacard .media .i{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.footer .footerele1 .leftele1 .mediacard .media .g{
+    background-color: #ec8244;
+}
+.footer .footerele1 .leftele1 .mediacard .media .l{
+    background-color:  #0077b5 ;
+}
+.footer .footerele1 .leftele1 .mediacard .media a i{
+    color: white; 
+}
+
+.footer .footerele2{
+    height: 80%;
+    width: 100%;
+    position: relative;
+}
+
+.footer .footerele2 .ele1{
+    height: 40%;
+    width: 100%;
+    display: flex;
+}
+.footer .footerele2 .ele1 .address{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    margin-left: 10%;
+    align-items: center;
+}
+.footer .footerele2 .ele1 .address .icon{
+    font-size: 30px;
+    color: #91280e;
+    margin:-8% 0 0 5%;
+
+}
+.footer .footerele2 .ele1 .address .add{
+    margin-left: 5%;
+}
+.footer .footerele2 .ele1 .address .add h3{
+    font-size:20px;
+    font-family: arial;
+    color:white;
+}
+.footer .footerele2 .ele1 .address .add p{
+    font-size:17px;
+    font-family: arial;
+    color:white;
+}
+
+
+.footer .footerele2 .ele1 .contact{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    margin-left: 5%;
+    align-items: center;
+}
+.footer .footerele2 .ele1 .contact .phoneicon{
+    font-size: 30px;
+    color: #91280e;
+    margin:-8% 0 0 5%;
+
+}
+.footer .footerele2 .ele1 .contact .phonenum{
+    margin-left: 5%;
+}
+.footer .footerele2 .ele1 .contact .phonenum h3{
+    font-size:20px;
+    font-family: arial;
+    color:white;
+}
+.footer .footerele2 .ele1 .contact .phonenum p{
+    font-size:17px;
+    font-family: arial;
+    color:white;
+}
+
+.footer .footerele2 .ele2{
+    height: 60%;
+    width: 100%;
+}
+.footer .footerele2 .ele2 h3{
+    margin: 2% 0 0 12%;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+.footer .footerele2 .ele2 .link{
+    display: flex;
+    margin-top:3%;
+}
+.footer .footerele2 .ele2 .link ul{
+    margin-left: 9%;
+}
+
+.footer .footerele2 .ele2 .link ul li{
+    list-style: none;
+    margin-top: 15px;
+}
+.footer .footerele2 .ele2 .link ul li a{
+    text-decoration: none;
+    color: #b4b4b4;
+}
+.footer .footerele2 .ele2 .link ul li a:hover{
+    color: orangered;
+}
+
+
+ .footer .footerele2 .ele2 .line-container {
+    position: relative;
+    width: 120px;
+    height: 3px;
+    overflow: hidden;
+    display: flex;
+    margin:2% 0 0 12%;
+    background-color: orangered;
+  }
+  
+  .footer .footerele2 .ele2 .moving-line {
+    position: absolute;
+    top: 0;
+    left: -80%; 
+    width: 70%; 
+    height: 100%;
+    background-color: orangered; 
+    animation: moveLine 2s linear infinite; 
+  }
+  .footer .footerele2 .ele2 .moving-line1 {
+    position: absolute;
+    top: 0;
+    left: -70%; 
+    width: 100%; 
+    height: 100%;
+    background-color: rgb(13, 13, 13); 
+    animation: moveLine 2s linear infinite;
+  }
+  .footer .footerele2 .ele2 .moving-line2 {
+    position: absolute;
+    top: 0;
+    left: -50%; 
+    width: 70%;
+    height: 100%;
+    background-color: orangered; 
+    animation: moveLine 2s linear infinite;
+  }
+  @keyframes moveLine {
+    0% {
+      transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+   
+  }
+/*===============================Footer Media query==============================*/
+@media screen and (max-width: 1225px) {
+    .footer .footerele1 .leftele1 .mediacard .media #mediabutton {
+        margin: 6px 0 0 5%;
+    }
+    .footer .footerele1 .leftele2 img {
+        width: 32%;
+    }
+}
+
+@media screen and (max-width: 855px) {
+    .footer {
+        display: block;
+        height: 140vh;
+    }
+    .footer .footerele1 {
+        width: 100%;
+        height: 30%;
+    }
+    .footer .footerele2 {
+        width: 100%;
+    }
+    .footer .footerele1 .leftele1 {
+        height: 70%;
+    }
+    .footer .footerele1 .leftele1 .mediacard {
+        width: 60%;
+        height: 100%;
+        margin-left: 20%;
+    }
+    .footer .footerele1 .leftele1 .mediacard .media {
+        width: 70%;
+        margin-left: 15%;
+    }
+    .footer .footerele1 .leftele2 img {
+        width: 18%;
+        margin-left: 41%;
+    }
+    .footer .footerele2 .ele2 h3 {
+        margin-left: 20%;
+    }
+    .footer .footerele2 .ele2 .line-container {
+        margin-left: 20%;
+    }
+    .footer .footerele2 .ele2 .link {
+        margin-left: 7%;
+    }
+    .footer .footerele2 .ele1 {
+        height: 30%;
+    }
+    .footer .footerele2 .ele2{
+        height: 40%;
+    }
+}
+@media screen and (max-width: 380px) {
+    
+    .footer{
+        height: 120vh;
+    }
+    .footer .footerele1 {
+        height: 40%;
+    }
+
+    .footer .footerele2 .ele1{
+        display: block;
+    }
+    .footer .footerele2 .ele1 .address{
+        width: 90%;
+        height: 50%;
+        margin-left: 5%;
+    }
+    .footer .footerele2 .ele1 .contact{
+        width: 90%;
+        height: 50%;
+        margin-left: 5%;
+    }
+    .footer .footerele1 .leftele1 .mediacard{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: -10%;
+    }
+    .footer .footerele2 .ele2 h3{
+        margin-left: 15%;
+    }
+    .footer .footerele2 .ele2 .line-container{
+        margin-left: 15%;
+    }
+    .footer .footerele2 .ele2 .link{
+        margin-left: 0%;
+    }
+    .footer .footerele2 .ele2 .link ul{
+        margin-left: 5%;
+    }
+
+
+}
+
+
+
+/*============================copyright=====================*/
+
+  
+
+  .copyright{
+    width: 100%;
+    height: 12vh;
+    background-color: #272727;
+    display: flex;
+  }
+  .copyright .copy{
+    width: 50%;
+    text-align: center;
+    color: white;
+  }
+  .copyright .copy p{
+    margin-top: 4%;
+  }
+
+  .copyright .list{
+    width: 50%;
+  }
+  .copyright .list ul{
+    display: flex;
+text-align: center;  }
+  .copyright .list ul li{
+    list-style: none;
+    margin-right: 8%;
+    margin-top: 5%;
+  }
+  .copyright .list ul li a{
+    text-decoration: none;
+    color: #7c7d7e;
+  }
+/*=============================copyright media query======================*/
+@media screen and (max-width: 950px){
+    .copyright{
+        display: block;
+    }
+    .copyright .copy{
+        width: 100%;
+        height: 50%;
+    }
+    .copyright .copy p{
+        margin-top: 0%;
+    }
+    .copyright .list{
+        width: 100%;
+        height: 50%;
+    }
+    .copyright .list ul{
+        text-align: center;
+    }
+    .copyright .list ul li{
+        margin-top: 0%;
+    }
+}
+
+@media screen and (max-width: 950px){
+
+.copyright{
+    height: 20vh;
+    border-color: #285AEB;
+}
+.copyright .list ul li {
+    margin-right: 10px;
+}
+}
